@@ -1,0 +1,14 @@
+<h2 class="text-primary">Home Page</h2>
+<ul>
+    <li ng-repeat='video in videos'>
+        <a class="text-danger" href="/#/video/delete/{{video._id}}">
+            <i class="glyphicon glyphicon-remove"></i>&nbsp;&nbsp;
+        </a>
+        <a class="text-primary" href="/#/video/edit/{{video._id}}">
+            {{video.title}}
+        </a>
+    </li>
+</ul>
+<p>
+    <a class="text-success" href="/#/video/new">Add a Video</a>
+</p>
